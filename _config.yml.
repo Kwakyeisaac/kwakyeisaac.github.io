@@ -1,60 +1,69 @@
-# Site settings
-title: School Management System
-description: A comprehensive digital platform for basic education in Ghana.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://kwakyeisaac.github.io/Kwakyeisaac" # the base hostname & protocol for your site
+title: School Management System for Basic Schools
+author: Isaac Osei Kwakye
+  name: Kwakyeisaac
+  email: isaaclove520@gmail.com
 
-# GitHub settings
-repository: Kwakyeisaac/ kwakyeisaac.github.io
-github_username: Kwakyeisaac
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  Project Overview
+The School Management System (SMS) project aims to create a comprehensive digital platform tailored for basic education institutions in Ghana. The system will streamline administrative tasks, enhance communication, and improve the overall efficiency of school operations. By leveraging modern technology, the SMS seeks to address the unique challenges faced by schools in Ghana and provide a robust solution for managing educational institutions effectively.
+  in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
 
 # Build settings
-markdown: kramdown
+
+# If you clone the Minima repo and build locally, use this setting.
 theme: minima
 
-# Site navigation
-nav:
-  - name: "Home"
-    link: "/"
-  - name: "About"
-    link: "/about"
-  - name: "Features"
-    link: "/features"
-  - name: "Contact"
-    link: "/contact"
+# As of July 2024, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
+# If you want to use the latest Minima version on GitHub Pages, use the following setting and 
+# add a line comment on "theme: minima" above.
+#remote_theme: jekyll/minima
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# SEO settings
-seo:
-  title: "School Management System"
-  description: "A comprehensive digital platform for basic education in Ghana."
-  twitter: Isaac_Ijay
-  github: Kwakyeisaac
+# Theme-specific settings
 
-# Social links
-social:
-  github: Kwakyeisaac
-  twitter: Isaac_Ijay
-  Linkedin: Isaac love
+# If you want to link only specific pages in your header, use this and add the path to the pages
+# in order as they should show up.
+header_pages:
+  - about.md
 
-# Include and Exclude files from build
-include:
-  - _pages
-  - _posts
+# Set to `true` to show excerpts on the homepage.
+#show_excerpts: false
 
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+# Minima specific settings, which are only available from Minima 3.0 onward.
+minima:
+  # Minima skin selection.
+  # Available skins are:
+  # classic	           Default, light color scheme.
+  # dark	             Dark variant of the classic skin.
+  # auto	             Adaptive skin based on the default classic and dark skins.
+  # solarized-light	   Light variant of solarized color scheme.
+  # solarized-dark	   Dark variant of solarized color scheme.
+  # solarized	         Adaptive skin for solarized color scheme skins.
+  skin: classic
+  
+  # Minima date format.
+  # The default value is "%b %d, %Y" (e.g. Jul 02, 2024) 
+  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+  #date_format: "%b-%d-%Y"
 
-# Additional settings
-paginate: 5
-paginate_path: "/page:num/"
-
-# Custom variables
-author:Isaac Osei Kwakye
-email: isaaclove520@gmail.com
+  # Generate social links in footer.
+  #social_links:
+  #  - { platform: devto,          user_url: "https://dev.to/Kwakyeisaac" }
+  #  - { platform: dribbble,       user_url: "https://dribbble.com/Kwakyeisaac" }
+  #  - { platform: facebook,       user_url: "https://www.facebook.com/Ijay Godswil" }
+  #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/Kwakyeisaac" }
+  #  - { platform: github,         user_url: "https://github.com/Kwakyeisaac/minima" }
+  #  - { platform: gitlab,         user_url: "https://gitlab.com/Kwakyeisaac" }
+  #  - { platform: instagram,      user_url: "https://www.instagram.com/IsaacLove" }
+  #  - { platform: linkedin,       user_url: "https://www.linkedin.com/in/IsaacLove" }
+  #  - { platform: pinterest,      user_url: "https://www.pinterest.com/IsaacLove" }
+  #  - { platform: telegram,       user_url: "https://t.me/OseiKwakye" }
+  #  - { platform: twitter,        user_url: "https://twitter.com/Isaac_ijay" }
+  #  - { platform: x,              user_url: "https://x.com/@Isaac_ijay" }
+  #  - { platform: youtube,        user_url: "https://www.youtube.com/Isaaclove520" }
