@@ -1,0 +1,60 @@
+# Site settings
+title: School Management System
+description: A comprehensive digital platform for basic education in Ghana.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://kwakyeisaac.github.io/Kwakyeisaac" # the base hostname & protocol for your site
+
+# GitHub settings
+repository: Kwakyeisaac/ kwakyeisaac.github.io
+github_username: Kwakyeisaac
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Site navigation
+nav:
+  - name: "Home"
+    link: "/"
+  - name: "About"
+    link: "/about"
+  - name: "Features"
+    link: "/features"
+  - name: "Contact"
+    link: "/contact"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO settings
+seo:
+  title: "School Management System"
+  description: "A comprehensive digital platform for basic education in Ghana."
+  twitter: Isaac_Ijay
+  github: Kwakyeisaac
+
+# Social links
+social:
+  github: Kwakyeisaac
+  twitter: Isaac_Ijay
+  Linkedin: Isaac love
+
+# Include and Exclude files from build
+include:
+  - _pages
+  - _posts
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Additional settings
+paginate: 5
+paginate_path: "/page:num/"
+
+# Custom variables
+author:Isaac Osei Kwakye
+email: isaaclove520@gmail.com
