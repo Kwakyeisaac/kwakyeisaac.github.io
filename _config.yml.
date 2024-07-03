@@ -1,4 +1,5 @@
 # Site settings
+
 title: School Management System
 description: A comprehensive digital platform for basic education in Ghana.
 baseurl: "" # the subpath of your site, e.g. /blog
