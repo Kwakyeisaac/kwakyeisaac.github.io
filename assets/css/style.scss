@@ -1,0 +1,55 @@
+// /assets/css/style.scss
+
+// Import the base minima theme styles
+@import "minima";
+
+// Custom Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Custom Styles
+body {
+  font-family: $font-family-base;
+  color: $primary-color;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: $primary-color;
+  padding: 1rem;
+  text-align: center;
+  
+  h1 {
+    color: #fff;
+    margin: 0;
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      display: inline;
+      margin-right: 1rem;
+      
+      a {
+        color: #fff;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
